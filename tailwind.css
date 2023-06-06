@@ -535,11 +535,6 @@ video {
   background-color: rgb(143 162 6 / var(--tw-bg-opacity));
 }
 
-.bg-tertiary {
-  --tw-bg-opacity: 1;
-  background-color: rgb(97 174 201 / var(--tw-bg-opacity));
-}
-
 .font-Montserrat {
   font-family: Montserrat, sans-serif;
 }
@@ -547,34 +542,4 @@ video {
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-primary {
-  --tw-text-opacity: 1;
-  color: rgb(204 45 74 / var(--tw-text-opacity));
-}
-
-.text-secondary {
-  --tw-text-opacity: 1;
-  color: rgb(143 162 6 / var(--tw-text-opacity));
-}
-
-.text-tertiary {
-  --tw-text-opacity: 1;
-  color: rgb(97 174 201 / var(--tw-text-opacity));
 }
