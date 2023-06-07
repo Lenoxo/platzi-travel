@@ -147,32 +147,35 @@
           Rentas Destacadas
         </p>
         <div
-          class="w-full h-full flex flex-col space-y-4 items-center justify-center"
+          class=" flex flex-col space-y-4 items-center justify-center"
         >
-          <!-- Primera Card de rentas destacadas -->
-          <div class="w-full h-96 bg-chicago bg-cover rounded-xl">
-            <p class="CardTitle">Chicago</p>
-            <p
-              class="text-sm ml-8 p-1 text-white mr-24 bg-zinc-600/60 rounded-lg"
-            >
-              2 habitaciones con baño y cocina modernas.
-            </p>
-          </div>
-          <div class="w-full h-96 bg-bali bg-cover rounded-xl">
-            <p class="CardTitle">Bali</p>
-            <p
-              class="text-sm ml-8 p-1 text-white mr-24 bg-zinc-600/60 rounded-lg"
-            >
-              4 habitaciones con 3 baños, piscina y cocina.
-            </p>
-          </div>
-          <div class="w-full h-96 bg-LA bg-cover rounded-xl">
-            <p class="CardTitle">Los Ángeles</p>
-            <p
-              class="text-sm ml-8 p-1 text-white mr-24 bg-zinc-600/60 rounded-lg"
-            >
-              4 habitaciones con 3 baños, piscina y cocina.
-            </p>
+        <div class="w-full h-full place-items-center grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-4">
+            <!-- Primera Card de rentas destacadas -->
+            <!-- La propiedad de row-span-2 sirve para expandir a dos filas el tamaño de la Card. -->
+            <div class="w-full h-96 bg-center lg:h-full bg-chicago bg-cover rounded-xl row-span-2"> 
+              <p class="CardTitle">Chicago</p>
+              <p
+                class="text-sm ml-8 p-1 text-white mr-24 bg-zinc-600/60 lg:text-lg rounded-lg"
+              >
+                2 habitaciones con baño y cocina modernas.
+              </p>
+            </div>
+            <div class="w-full h-96 bg-center lg:h-84 bg-bali bg-cover rounded-xl">
+              <p class="CardTitle">Bali</p>
+              <p
+                class="text-sm ml-8 p-1 text-white mr-24 bg-zinc-600/60 lg:text-lg rounded-lg"
+              >
+                4 habitaciones con 3 baños, piscina y cocina.
+              </p>
+            </div>
+            <div class="w-full h-96 bg-center lg:h-84 bg-LA bg-cover rounded-xl">
+              <p class="CardTitle">Los Ángeles</p>
+              <p
+                class="text-sm ml-8 p-1 text-white mr-24 bg-zinc-600/60 lg:text-lg rounded-lg"
+              >
+                4 habitaciones con 3 baños, piscina y cocina.
+              </p>
+            </div>
           </div>
         </div>
       </div>
