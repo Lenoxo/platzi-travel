@@ -1,16 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/tailwind.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
-  <title>Platzi Travel</title>
-</head>
-<body>
-  <h1 class="text-lg text-tertiary font-Montserrat">Hello</h1>
-  <div class="w-64 h-64 bg-tertiary"></div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Platzi Travel</title>
+  </head>
+  <body>
+    <nav></nav>
+    <div id="tab_bar"></div>
+    <section class="w-full h-screen">
+      <div id="home">
+        <div class="w-full h-3/4">
+          <div class="w-full h-full flex flex-col absolute space-y-96 items-center py-4">
+            <input type="search" class="rounded-full outline-none p-3 text-center" placeholder="San Francisco" />
+            <button type="button" class="rounded-full bg-white text-xl text-primary font-semibold p-4 w-32 shadow-lg">Explorar</button>
+          </div>
+          <div class="w-full h-full">
+            <img src="./img/sanFrancisco.jpg" alt="sanFrancisco" />
+          </div>
+        </div>
+      </div>
+      <div id="recomendadas"></div>
+      <div id="rentas_destacadas"></div>
+    </section>
+    <footer></footer>
+  </body>
 </html>

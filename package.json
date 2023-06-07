@@ -5,12 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tw:dev": "tailwindcss -o tailwind.css --watch",
+    "tw:dev": "tailwindcss -i ./src/css/tailwind.css --watch",
     "tw:build": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch"
   },
   "author": "Lenoxo",
   "license": "MIT",
   "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.24",
