@@ -6,7 +6,7 @@
   "scripts": {
     "tw:dev": "tailwindcss -o ./public/css/tailwind.css --watch",
     "tw:build": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
-    "deploy": "gh-pages -d deploy"
+    "deploy": "gh-pages -d public"
   },
   "author": "Lenoxo",
   "license": "MIT",

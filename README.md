@@ -13,8 +13,11 @@ Platzi Travel es una página de destino responsiva que muestra varias imágenes 
 
 ### Demo
 **Desktop**
+
 ![Demo de Platzi Travel Desktop](https://media.giphy.com/media/29OErGV0Siz76ooLe8/giphy.gif)
+
 **Mobile**
+
 ![Demo de Platzi Travel Mobile](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjk5OWU1NDg4MzdiOTY0MDkwOTdlMTNlYzAwZDZmYmE5YjdkZTFhYyZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/HJa9qqx7eGvfNTLsCF/giphy.gif)
 
 ### [Pruebala](https://lenoxo.github.io/platzi-travel)
