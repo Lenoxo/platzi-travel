@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.{html,js}"],
+  content: ["./public/index.html", "./src/**/*.{html,js}"],
   darkMode: 'class',
   theme: {
     extend: {
@@ -27,6 +27,8 @@ module.exports = {
         'chicago': "url('../img/chicago.jpg')",
         'europe': "url('../img/europe.jpg')",
         'iceland': "url('../img/iceland.jpg')",
+        'amazonas': "url('https://images.pexels.com/photos/17043998/pexels-photo-17043998/free-photo-of-paisaje-verano-bosque-rio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+        'santaMarta': "url('https://images.pexels.com/photos/13731987/pexels-photo-13731987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
       }
     },
   },
