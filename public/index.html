@@ -139,7 +139,9 @@
               class="w-full h-2/5 bg-secondary px-4 shadow-md rounded-b-lg dark:bg-gray-700"
             >
               <p class="text-white text-xl font-bold py-2">Santa Marta</p>
-              <p class="text-white text-md">Reconecta con el mar de 7 colores.</p>
+              <p class="text-white text-md">
+                Reconecta con el mar de 7 colores.
+              </p>
             </div>
           </div>
           <div class="Card">
@@ -289,7 +291,7 @@
             FAQS
           </p>
           <div>
-            <p class="font-medium text-xl text-primary dark:text-white">
+            <p class="font-semibold text-xl text-primary dark:text-white">
               ¿Cómo reservo una habitación en el extranjero?
             </p>
             <p class="text-md pt-2">
@@ -300,7 +302,7 @@
           </div>
 
           <div>
-            <p class="font-medium text-xl text-primary dark:text-white">
+            <p class="font-semibold text-xl text-primary dark:text-white">
               ¿Qué información necesito proporcionar para reservar?
             </p>
             <p class="text-md pt-2">
@@ -310,7 +312,7 @@
           </div>
 
           <div>
-            <p class="font-medium text-xl text-primary dark:text-white">
+            <p class="font-semibold text-xl text-primary dark:text-white">
               ¿Es seguro reservar habitaciones en el extranjero aquí?
             </p>
             <p class="text-md pt-2">
@@ -320,7 +322,7 @@
           </div>
 
           <div>
-            <p class="font-medium text-xl text-primary dark:text-white">
+            <p class="font-semibold text-xl text-primary dark:text-white">
               ¿Cómo puedo confirmar mi reserva?
             </p>
             <p class="text-md pt-2">
@@ -330,7 +332,7 @@
           </div>
 
           <div>
-            <p class="font-medium text-xl text-primary dark:text-white">
+            <p class="font-semibold text-xl text-primary dark:text-white">
               ¿Puedo modificar o cancelar mi reserva?
             </p>
             <p class="text-md pt-2">
@@ -340,7 +342,7 @@
           </div>
 
           <div>
-            <p class="font-medium text-xl text-primary dark:text-white">
+            <p class="font-semibold text-xl text-primary dark:text-white">
               ¿Cuáles métodos de pago se aceptan?
             </p>
             <p class="text-md pt-2">
@@ -351,7 +353,10 @@
         </div>
       </div>
     </section>
-    <footer class="bg-gray-50 text-gray-400 my-16 px-6 space-y-2" id="about_us">
+    <footer
+      class="bg-gray-50 text-gray-400 mt-8 mb-16 p-6 space-y-4 flex flex-col dark:bg-gray-800"
+      id="about_us"
+    >
       <p class="text-lg font-bold">Acerca de</p>
       <p class="text-sm">Inversionistas</p>
       <p class="text-sm">Empleos</p>
@@ -446,13 +451,13 @@
       </a>
     </div>
     <script>
-      const darkModeButton = document.querySelectorAll("#dark_mode_button")
+      const darkModeButton = document.querySelectorAll("#dark_mode_button");
       // Con cada button, se le añade el event listener, para hacer toggle a la clase de dark.
       darkModeButton.forEach((button) =>
         button.addEventListener("click", () => {
-          document.documentElement.classList.toggle("dark")
+          document.documentElement.classList.toggle("dark");
         })
-      )
+      );
     </script>
   </body>
 </html>
