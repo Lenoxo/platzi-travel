@@ -1,10 +1,10 @@
 {
   "name": "platzi-travel",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tw:dev": "tailwindcss -o ./public/css/tailwind.css --watch",
+    "tw:dev": "npx @tailwindcss/cli -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
     "tw:build": "tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
     "deploy": "gh-pages -d public"
   },
@@ -12,11 +12,12 @@
   "license": "MIT",
   "homepage": "https://lenoxo.github.io/platzi-travel",
   "devDependencies": {
+    "@tailwindcss/cli": "^4.3.0",
     "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/typography": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.14",
     "gh-pages": "^5.0.0",
     "postcss": "^8.4.24",
-    "tailwindcss": "^3.3.2"
+    "tailwindcss": "^4.3.3"
   }
 }
