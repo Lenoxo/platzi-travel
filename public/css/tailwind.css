@@ -43,12 +43,15 @@
     --color-secondary: #8fa206;
     --color-terciary: #61aec9;
     --font-Montserrat: Montserrat, sans-serif;
+    --background-image-sanFrancisco: url('../img/sanFrancisco.jpg');
+    --background-image-sanFranciscoDesktop: url('../img/sanFranciscoDesktop.jpg');
     --background-image-yosemite: url('../img/yosemite.jpg');
     --background-image-LA: url('../img/LA.jpg');
     --background-image-new_york: url('../img/new_york.jpg');
     --background-image-miami: url('../img/miami.jpg');
     --background-image-bali: url('../img/bali.jpg');
     --background-image-chicago: url('../img/chicago.jpg');
+    --background-image-iceland: url('../img/iceland.jpg');
     --background-image-amazonas: url('https://images.pexels.com/photos/17043998/pexels-photo-17043998/free-photo-of-paisaje-verano-bosque-rio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     --background-image-santaMarta: url('https://images.pexels.com/photos/13731987/pexels-photo-13731987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   }
@@ -211,9 +214,6 @@
   .top-0 {
     top: 0px;
   }
-  .top-1 {
-    top: var(--spacing);
-  }
   .top-1\/2 {
     top: calc(1 / 2 * 100%);
   }
@@ -265,17 +265,8 @@
   .hidden {
     display: none;
   }
-  .table {
-    display: table;
-  }
-  .h-2 {
-    height: calc(var(--spacing) * 2);
-  }
   .h-2\/5 {
     height: calc(2 / 5 * 100%);
-  }
-  .h-3 {
-    height: calc(var(--spacing) * 3);
   }
   .h-3\/4 {
     height: calc(3 / 4 * 100%);
@@ -304,6 +295,9 @@
   .h-full {
     height: 100%;
   }
+  .h-screen {
+    height: 100vh;
+  }
   .w-48 {
     width: calc(var(--spacing) * 48);
   }
@@ -313,17 +307,8 @@
   .w-full {
     width: 100%;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
-  .resize {
-    resize: both;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -411,24 +396,14 @@
     border-bottom-right-radius: var(--radius-lg);
     border-bottom-left-radius: var(--radius-lg);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .bg-gray-200 {
     background-color: var(--color-gray-200);
-  }
-  .bg-gray-600 {
-    background-color: var(--color-gray-600);
   }
   .bg-secondary {
     background-color: var(--color-secondary);
   }
   .bg-white {
     background-color: var(--color-white);
-  }
-  .bg-zinc-600 {
-    background-color: var(--color-zinc-600);
   }
   .bg-zinc-600\/60 {
     background-color: color-mix(in srgb, oklch(44.2% 0.017 285.786) 60%, transparent);
@@ -453,6 +428,9 @@
   }
   .bg-new_york {
     background-image: var(--background-image-new_york);
+  }
+  .bg-sanFrancisco {
+    background-image: var(--background-image-sanFrancisco);
   }
   .bg-santaMarta {
     background-image: var(--background-image-santaMarta);
@@ -544,9 +522,6 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
-  .text-gray-200 {
-    color: var(--color-gray-200);
-  }
   .text-gray-400 {
     color: var(--color-gray-400);
   }
@@ -561,9 +536,6 @@
   }
   .text-zinc-900 {
     color: var(--color-zinc-900);
-  }
-  .underline {
-    text-decoration-line: underline;
   }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -580,10 +552,6 @@
       outline: 2px solid transparent;
       outline-offset: 2px;
     }
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
@@ -636,22 +604,9 @@
     --tw-ring-shadow: var(--tw-ring-inset,) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentcolor);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-  @media (width >= 40rem) {
-    .sm\:hidden {
-      display: none;
-    }
-  }
-  @media (width >= 48rem) {
-    .md\:hidden {
-      display: none;
-    }
-  }
   @media (width >= 64rem) {
     .lg\:ml-16 {
       margin-left: calc(var(--spacing) * 16);
-    }
-    .lg\:block {
-      display: block;
     }
     .lg\:flex {
       display: flex;
@@ -685,11 +640,8 @@
       margin-block-start: 0;
       margin-block-end: 0;
     }
-    .lg\:bg-cover {
-      background-size: cover;
-    }
-    .lg\:bg-center {
-      background-position: center;
+    .lg\:bg-sanFranciscoDesktop {
+      background-image: var(--background-image-sanFranciscoDesktop);
     }
     .lg\:pt-40 {
       padding-top: calc(var(--spacing) * 40);
@@ -931,11 +883,6 @@
   inherits: false;
   initial-value: 0;
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -1005,11 +952,6 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -1058,7 +1000,6 @@
       --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
       --tw-space-x-reverse: 0;
-      --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-shadow: 0 0 #0000;
       --tw-shadow-color: initial;
@@ -1074,7 +1015,6 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-translate-x: 0;
