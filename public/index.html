@@ -89,7 +89,7 @@
           >
             <input
               type="search"
-              class="rounded-full outline-none p-3 text-center transition duration-300 focus-within:shadow-sm focus:ring focus:w-10/12 lg:hidden"
+              class="rounded-full outline-hidden p-3 text-center transition duration-300 focus-within:shadow-xs focus:ring-3 focus:w-10/12 lg:hidden"
               placeholder="San Francisco"
             />
             <p
@@ -106,8 +106,9 @@
           </div>
           <!-- Contenedor de la imagen de fondo -->
           <div
-            class="w-full h-full lg:h-[36rem] lg:bg-sanFranciscoDesktop lg:bg-cover lg:bg-center"
+            class="w-full h-full lg:h-144 lg:bg-cover lg:bg-center"
           >
+            <img class="sm:hidden md:hidden lg:block" src="./img/sanFranciscoDesktop.jpg" alt="sanFrancisco" />
             <img
               class="lg:hidden"
               src="./img/sanFrancisco.jpg"
@@ -351,7 +352,7 @@
         </div>
       </div>
     </section>
-    <footer class="bg-gray-600 text-gray-400 my-16 px-6 space-y-2" id="about_us">
+    <footer class="bg-gray-200 dark:bg-gray-600  my-16 px-6 space-y-2" id="about_us">
       <p class="text-lg font-bold">Acerca de</p>
       <p class="text-sm">Inversionistas</p>
       <p class="text-sm">Empleos</p>

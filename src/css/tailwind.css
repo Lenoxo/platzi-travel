@@ -1,7 +1,52 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-@import "tailwindcss";
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+@plugin '@tailwindcss/forms';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary: #cc2d4a;
+  --color-secondary: #8fa206;
+  --color-terciary: #61aec9;
+
+  --font-Montserrat: Montserrat, sans-serif;
+
+  --background-image-sanFrancisco: url('../img/sanFrancisco.jpg');
+  --background-image-sanFranciscoDesktop: url('../img/sanFranciscoDesktop.jpg');
+  --background-image-yosemite: url('../img/yosemite.jpg');
+  --background-image-LA: url('../img/LA.jpg');
+  --background-image-seattle: url('../img/seattle.jpg');
+  --background-image-new_york: url('../img/new_york.jpg');
+  --background-image-norway: url('../img/norway.jpg');
+  --background-image-sydney: url('../img/sydney.jpg');
+  --background-image-miami: url('../img/miami.jpg');
+  --background-image-switzerland: url('../img/switzerland.jpg');
+  --background-image-bali: url('../img/bali.jpg');
+  --background-image-chicago: url('../img/chicago.jpg');
+  --background-image-europe: url('../img/europe.jpg');
+  --background-image-iceland: url('../img/iceland.jpg');
+  --background-image-amazonas: url('https://images.pexels.com/photos/17043998/pexels-photo-17043998/free-photo-of-paisaje-verano-bosque-rio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  --background-image-santaMarta: url('https://images.pexels.com/photos/13731987/pexels-photo-13731987.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 /* Al usar @apply se pueden extraer propiedades que se utilizan mucho */
 .Card {
